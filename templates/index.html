@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Indicadores verificáveis de recursos orçamentários e financeiros federais da saúde digital — LabX.">
+  <title>INDI · Recursos da SEIDIGI | LabX</title>
+  <style>__CSS__</style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir ao conteúdo</a>
+  <header class="masthead">
+    <div class="mast-row">
+      <div class="wordmark">__BRAND__<span class="sep"></span><span class="wordmark-label">VIDRARIA / INDICADORES</span></div>
+      <nav aria-label="Navegação do painel"><a href="#analise">Análise</a><a href="#serie">Série histórica</a><a href="#metodologia">FQI e métodos</a><a href="#fontes">Fontes</a></nav>
+    </div>
+  </header>
+  <main id="conteudo" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content"><div class="overline">LABX / OBSERVATÓRIO DE RECURSOS PÚBLICOS <span class="separator">/</span> INDI 01</div>
+        <h1 id="hero-title">Recursos da <em>Saúde Digital</em></h1>
+        <p class="hero-sub">Orçamento, execução e participação institucional da SEIDIGI no Ministério da Saúde.</p>
+        <div class="hero-meta"><span id="meta-update" class="flag flag-neutral">Última publicação: —</span><span id="meta-coverage" class="flag">Série histórica: —</span><span id="meta-exec" class="flag">Execução: —</span><span id="meta-ipca" class="flag">IPCA: —</span></div>
+      </div>
+      <div class="hero-monogram" aria-hidden="true"><span>Σ</span><i></i><b>R$</b></div>
+    </section>
+    <aside id="data-warning" class="warning" hidden></aside>
+    <section id="analise" class="panel filters" aria-label="Filtros de análise">
+      <div class="section-head compact"><div><div class="overline">01 / EXPLORAR</div><h2>Recorte analítico</h2></div><span class="tip">Os controles funcionam sem conexão com a internet.</span></div>
+      <div class="control-grid">
+        <label>Instituição / escopo<select id="scope"><option value="seidigi">SEIDIGI</option><option value="ti_ms">Tecnologia da informação no MS</option><option value="ms">Ministério da Saúde</option></select></label>
+        <label>Indicador<select id="metric"><option value="atualizado">Orçamento atualizado</option><option value="inicial">Orçamento inicial</option><option value="empenhado">Empenhado</option><option value="liquidado">Liquidado</option><option value="pago">Pago (exercício)</option><option value="rp_pago">Restos a pagar pagos</option><option value="desembolso">Desembolso total</option><option value="execucao">Execução financeira / dotação (%)</option><option value="share_ms_atualizado">Participação no MS: dotação (%)</option><option value="share_ms_empenhado">Participação no MS: empenhado (%)</option><option value="share_ms_liquidado">Participação no MS: liquidado (%)</option><option value="share_ms_pago">Participação no MS: pago (%)</option><option value="share_ms_desembolso">Participação no MS: desembolso (%)</option><option value="share_ti_atualizado">TI-MS / SEIDIGI: dotação (%)</option><option value="share_ti_pago">TI-MS / SEIDIGI: pago (%)</option></select></label>
+        <label>Agrupamento<select id="group"><option value="ano">Exercícios (ano)</option><option value="mandato">Mandatos federais (4 anos)</option></select></label>
+        <label>Exercício destacado<select id="year"><option>—</option></select></label>
+      </div>
+      <div class="options"><label class="check"><input id="real" type="checkbox"><span>Valores reais (IPCA)</span></label><label class="check"><input id="percap" type="checkbox"><span>Por habitante</span></label><label class="check"><input id="comparison" type="checkbox" checked><span>Comparar com MS</span></label><button id="export" class="button" type="button">Exportar tabela CSV <span aria-hidden="true">↗</span></button></div>
+      <div id="mode-note" class="hint" aria-live="polite"></div>
+    </section>
+    <section class="kpis" aria-label="Indicadores de destaque">
+      <article class="kpi"><span class="kpi-index">01 / REFERÊNCIA</span><span class="kpi-title" id="kpi1-label">Valor selecionado</span><strong id="kpi1">—</strong><span class="kpi-sub" id="kpi1-sub">—</span></article>
+      <article class="kpi"><span class="kpi-index">02 / EXECUÇÃO</span><span class="kpi-title">Pago / orçamento atualizado</span><strong id="kpi2">—</strong><span class="kpi-sub">Apenas pagamentos do exercício</span></article>
+      <article class="kpi"><span class="kpi-index">03 / PARTICIPAÇÃO</span><span class="kpi-title" id="kpi3-label">Participação no MS</span><strong id="kpi3">—</strong><span class="kpi-sub" id="kpi3-sub">Mesma métrica e mesmo exercício</span></article>
+      <article class="kpi"><span class="kpi-index">04 / RESTOS A PAGAR</span><span class="kpi-title">Pagamentos de RP</span><strong id="kpi4">—</strong><span class="kpi-sub">Não compõem execução da LOA corrente</span></article>
+    </section>
+    <section id="serie" class="panel chart-panel" aria-labelledby="chart-title">
+      <div class="section-head"><div><div class="overline">02 / COMPARAR</div><h2 id="chart-title">Evolução dos recursos</h2><p id="chart-subtitle">Série anual, com mandatos separados por marcos serrilhados.</p></div><div class="legend"><span><i class="dot dot-main"></i><span id="legend-main">SEIDIGI</span></span><span id="legend-ms"><i class="dot dot-muted"></i>MS</span></div></div>
+      <div class="chart-scroll"><div id="chart" role="img" aria-label="Série histórica de recursos" class="chart-content"></div></div>
+      <div class="chart-foot"><span id="chart-range">—</span><span class="line-key"><svg width="24" height="12" viewBox="0 0 24 12" aria-hidden="true"><polyline points="11,0 13,2 11,4 13,6 11,8 13,10 11,12" fill="none" stroke="currentColor" stroke-width="1.3" /></svg>Início de mandato</span></div>
+    </section>
+    <section class="panel table-panel" aria-labelledby="table-title">
+      <div class="section-head"><div><div class="overline">03 / VERIFICAR</div><h2 id="table-title">Dados consolidados</h2><p>Valores não disponíveis são representados por travessão; zeros estruturais aparecem identificados.</p></div></div>
+      <div class="table-scroller"><table><thead><tr><th scope="col">Período</th><th scope="col" id="table-value-title">Indicador</th><th scope="col">Empenhado</th><th scope="col">Liquidado</th><th scope="col">Pago</th><th scope="col">Execução (%)</th><th scope="col">Origem / qualidade</th></tr></thead><tbody id="table-body"></tbody></table></div>
+    </section>
+    <section class="insight-grid" aria-label="Notas analíticas">
+      <article class="note"><div class="overline">LINHA DO TEMPO</div><h3>SEIDIGI não existia antes de 2023</h3><p>Nos exercícios até 2022, a série institucional é marcada como <b>zero estrutural</b>, e não como ausência de gastos federais em tecnologia ou saúde digital.</p></article>
+      <article class="note"><div class="overline">INTERPRETAÇÃO</div><h3>Dotação ≠ desembolso</h3><p>Orçamento inicial e atualizado são autorizações. Empenho, liquidação e pagamento pertencem ao ciclo de execução. Restos a pagar são mostrados separadamente.</p></article>
+      <article class="note"><div class="overline">COBERTURA</div><h3>Fontes de transparência rastreáveis</h3><p>Somente rubricas homologadas entram nos escopos de TI e SEIDIGI. Meses faltantes, divergências e classificações pendentes não são preenchidos com zero.</p></article>
+    </section>
+    <section id="metodologia" class="panel method-panel" aria-labelledby="fqi-title"><div class="section-head"><div><div class="overline">04 / TRANSPARÊNCIA METODOLÓGICA</div><h2 id="fqi-title">Fichas de qualificação dos indicadores</h2><p>Definições, fórmulas e principais cautelas de interpretação.</p></div></div>
+      <div class="fqi-list">
+        <details><summary><span class="fqi-num">FQI 01</span><strong>Autorização orçamentária</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> orçamento inicial, atualizado e créditos líquidos. <b>Fórmula:</b> créditos = atualizado − inicial. <b>Fonte:</b> CGU/OrcamentoDespesa; conferência SIOP. <b>Limitação:</b> dotação anual não equivale a gasto ou desembolso.</p></details>
+        <details><summary><span class="fqi-num">FQI 02</span><strong>Execução orçamentária</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> empenhado, liquidado e pago do exercício. <b>Fórmula:</b> execução (%) = pago / dotação atualizada × 100. <b>Fonte:</b> execução mensal CGU; empenho e pago anuais apenas como reserva identificada. <b>Limitação:</b> lacunas mensais não viram despesa zero.</p></details>
+        <details><summary><span class="fqi-num">FQI 03</span><strong>Execução financeira e restos a pagar</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> pago do exercício, restos a pagar pagos e desembolso total. <b>Fórmula:</b> desembolso total = pago do exercício + RP pagos. <b>Fonte:</b> CGU/DespesasExecucao. <b>Limitação:</b> RP não integra pagamento da dotação corrente.</p></details>
+        <details><summary><span class="fqi-num">FQI 04</span><strong>Participação relativa ao Ministério e ao SUS</strong><span class="chevron">+</span></summary><p><b>Fórmula:</b> indicador da SEIDIGI / indicador do MS × 100, no mesmo estágio e exercício. <b>SIOPS:</b> estados e municípios apenas em exercícios encerrados; razão nacional SUS indisponível até consolidação sem dupla contagem de transferências. <b>Cautela:</b> não misturar gasto próprio e transferido indiscriminadamente.</p></details>
+        <details><summary><span class="fqi-num">FQI 05</span><strong>Tecnologia da informação versus SEIDIGI</strong><span class="chevron">+</span></summary><p><b>Definição:</b> rubricas TI do MS e rubricas atribuídas à SEIDIGI somente com ação/plano orçamentário homologados em <code>config/escopos.csv</code>. <b>Indicadores:</b> valores R$, % do MS, razão TI-MS/SEIDIGI. <b>Até 2022:</b> zero estrutural SEIDIGI; TI do MS pode existir.</p></details>
+        <details><summary><span class="fqi-num">FQI 06</span><strong>IPCA, habitantes e períodos de quatro anos</strong><span class="chevron">+</span></summary><p><b>IPCA:</b> tabela 1737, variável 2266 (IBGE/SIDRA), número-índice; deflator anual pela média dos meses observados do ano até a última referência disponível. <b>Habitantes:</b> RIPSA/DATASUS 2000–2025, sem imputação para 2026. <b>Mandato:</b> soma dos fluxos anuais (não das razões), com indicação de intervalos parciais.</p></details>
+      </div>
+    </section>
+    <section id="fontes" class="source-panel" aria-labelledby="source-title"><div class="section-head"><div><div class="overline">05 / PROVENIÊNCIA</div><h2 id="source-title">Fontes e atualização</h2></div></div><p>Esta página incorpora os valores agregados no momento da publicação; não faz requisições externas ao abrir. Consultas históricas devem considerar a data de referência de cada fonte e sua política de revisão.</p><div id="source-links" class="source-links"></div><p id="source-detail" class="source-detail"></p></section>
+  </main>
+  <footer class="footer"><div class="container footer-line"><span>LABX · INDI RECURSOS SEIDIGI</span><span>Dados públicos, código auditável, indicadores versionados.</span><span id="footer-update">Última publicação válida: —</span></div></footer>
+  <script id="model" type="application/json">__DATA__</script>
+  <script>__APPJS__</script>
+</body>
+</html>

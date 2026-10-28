@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+.venv/
+.env
+cache/
+logs/*.log
+.tmp/
+*.partial
+# O HTML final e os insumos metodologicos sao versionados.
+data/candidatos_escopos.csv

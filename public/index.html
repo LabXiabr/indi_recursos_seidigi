@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Indicadores verificáveis de recursos orçamentários e financeiros federais da saúde digital — LabX.">
+  <title>INDI · Recursos da SEIDIGI | LabX</title>
+  <style>/* Tokens-base de contingencia: para versao oficial acrescente --brand-css do Vidraria.
+   Fonte oficial do sistema e o repositorio LabXiabr/vidraria, nao estes fallbacks. */
+:root{--ink:#172c41;--text:#344b5e;--muted:#6a7c8c;--primary:#337ab7;--primary-dark:#255d8b;--secondary:#64a2b9;--paper:#f4f7f9;--surface:#fff;--pale:#eaf1f7;--stroke:#d7e2e9;--accent:#c58b57;--shadow:0 12px 44px rgba(28,59,83,.065);--radius:17px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.55}a{color:var(--primary-dark)}a:hover{text-decoration-thickness:2px}button,select{font:inherit}button,select,input{accent-color:var(--primary)}button:focus-visible,select:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #cf9445;outline-offset:3px}.skip{position:absolute;transform:translateY(-100%);background:white;z-index:20;padding:10px}.skip:focus{transform:none}.container{max-width:1240px;margin:0 auto;padding:0 26px}.masthead{background:#fff;border-bottom:1px solid var(--stroke)}.mast-row{max-width:1240px;margin:auto;padding:17px 26px;display:flex;justify-content:space-between;align-items:center;gap:24px}.wordmark{display:flex;align-items:center;gap:13px;white-space:nowrap}.mark{font-weight:850;letter-spacing:-1.3px;font-size:24px;color:var(--ink)}.mark-dot{color:var(--primary)}.wordmark svg{max-width:143px;height:32px;width:auto}.wordmark-label{font-size:10px;letter-spacing:2.3px;font-weight:850;color:var(--primary-dark)}.sep{height:24px;width:1px;background:var(--stroke)}nav{display:flex;gap:24px}nav a{text-decoration:none;color:var(--text);font-size:12px;font-weight:750}nav a:hover{color:var(--primary)}.hero{display:flex;justify-content:space-between;position:relative;overflow:hidden;min-height:260px;margin:28px 0 19px;padding:34px 42px;background:linear-gradient(107deg,#172d43 8%,#244f70 68%,#337ab7);border-radius:var(--radius);color:white}.hero-content{z-index:2}.overline{font-size:10px;letter-spacing:2.0px;font-weight:850;color:var(--primary-dark)}.hero .overline{color:#a9d2ed}.separator{padding:0 9px;color:#7ab5db}h1,h2,h3{font-family:'Averia Sans Libre',Inter,system-ui,sans-serif;letter-spacing:-.65px;line-height:1.19}h1{font-size:clamp(31px,4.1vw,55px);font-weight:750;margin:18px 0 10px}h1 em{color:#a6d5f6;font-style:normal}h2{font-size:25px;margin:6px 0 5px}h3{font-size:20px;margin:9px 0 11px}.hero-sub{color:#d9e9f4;max-width:640px;font-size:14px}.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:27px}.flag{display:inline-block;border:1px solid #ffffff4b;background:#ffffff12;border-radius:30px;padding:5px 11px;font-size:10px;color:#e4f0f8;font-weight:750}.hero-monogram{position:relative;width:230px;min-width:190px}.hero-monogram span{font-size:200px;line-height:1;position:absolute;right:24px;top:-15px;color:#ffffff13;font-family:serif}.hero-monogram i{width:165px;height:165px;border:1px solid #ffffff24;transform:rotate(31deg);border-radius:25px;position:absolute;top:6px;right:15px}.hero-monogram b{position:absolute;right:45px;top:74px;color:#ffffff67;font-size:33px}.panel{background:var(--surface);border:1px solid var(--stroke);border-radius:var(--radius);box-shadow:var(--shadow)}.filters{padding:26px 30px;margin-bottom:17px}.section-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:17px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.section-head.compact{margin-bottom:20px}.tip{color:var(--muted);font-size:11px;padding-top:7px;text-align:right}.control-grid{display:grid;grid-template-columns:1.2fr 1.25fr 1fr .8fr;gap:12px}.control-grid label{font-size:11px;font-weight:750;color:var(--muted);display:flex;flex-direction:column;gap:6px}.control-grid select{border:1px solid var(--stroke);border-radius:9px;width:100%;padding:10px 29px 10px 11px;background:#f9fbfd;color:var(--ink);font-size:12px;font-weight:650}.options{display:flex;gap:25px;align-items:center;flex-wrap:wrap;margin-top:18px;padding-top:14px;border-top:1px dashed var(--stroke)}.check{font-size:12px;display:flex;gap:8px;align-items:center;color:var(--text);font-weight:700}.check input{width:15px;height:15px}.button{border:1px solid var(--primary);background:#fff;color:var(--primary-dark);font-size:11px;border-radius:8px;font-weight:800;padding:9px 12px;cursor:pointer;margin-left:auto}.button:hover{background:var(--pale)}.hint{font-size:11px;color:var(--muted);margin-top:12px}.warning{border:1px solid #ddbc78;background:#fff8e9;color:#694e21;padding:12px 17px;border-radius:10px;margin-bottom:16px;font-size:12px}.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:17px 0}.kpi{padding:21px;border-radius:var(--radius);background:#fff;border:1px solid var(--stroke);min-width:0}.kpi-index{font-size:9px;letter-spacing:1.3px;font-weight:900;color:var(--primary)}.kpi-title{display:block;font-size:12px;color:var(--text);margin:13px 0 6px}.kpi strong{display:block;font-size:clamp(19px,2.1vw,30px);font-family:'Averia Sans Libre',Inter,sans-serif;font-weight:750;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.8px}.kpi-sub{display:block;font-size:10px;color:var(--muted);margin-top:8px;min-height:19px}.chart-panel{padding:27px 30px 19px;margin-bottom:16px}.chart-scroll{overflow:auto}.chart-content{height:315px;min-width:600px;display:flex;align-items:center;justify-content:center}.chart-content svg{width:100%;height:100%;min-width:600px}.chart-content text{font-family:Inter,system-ui,sans-serif;font-size:11px;fill:#748799}.chart-content .axis-label{font-size:10px}.chart-foot{display:flex;justify-content:space-between;align-items:center;padding-top:8px;color:var(--muted);font-size:10px;border-top:1px solid var(--stroke)}.line-key{display:flex;align-items:center;gap:6px}.legend{display:flex;gap:20px;padding-top:11px;font-size:11px;font-weight:800;color:var(--text)}.legend>span{display:flex;align-items:center;gap:7px}.dot{height:9px;width:9px;display:inline-block;border-radius:50%}.dot-main{background:var(--primary)}.dot-muted{background:var(--accent)}.table-panel{padding:27px 30px 19px;margin-bottom:16px}.table-scroller{overflow:auto}table{border-collapse:collapse;width:100%;font-size:12px;min-width:690px}th{text-align:right;color:var(--muted);font-size:10px;white-space:nowrap;padding:11px 10px;border-bottom:2px solid var(--stroke);background:#f9fbfd}th:first-child,td:first-child{text-align:left}td{border-bottom:1px solid var(--stroke);padding:12px 10px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}tbody tr:hover{background:#f5f9fc}td:first-child{font-weight:850;color:var(--ink)}.quality{font-size:10px;white-space:normal;max-width:185px;text-align:left;color:var(--muted)}.zero{color:var(--primary-dark);font-weight:800}.missing{color:#9ba8b3}.insight-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:17px}.note{background:#ebf1f5;border:1px solid var(--stroke);border-radius:13px;padding:22px}.note h3{font-size:18px}.note p{font-size:12px;color:var(--text);line-height:1.6;margin:0}.method-panel{padding:27px 30px 17px;margin-bottom:17px}.fqi-list details{border-top:1px solid var(--stroke)}.fqi-list details:last-child{border-bottom:1px solid var(--stroke)}.fqi-list summary{list-style:none;display:flex;align-items:center;gap:16px;cursor:pointer;padding:14px 0}.fqi-list summary::-webkit-details-marker{display:none}.fqi-num{font-size:10px;letter-spacing:.4px;color:var(--primary-dark);background:var(--pale);border-radius:5px;padding:5px 8px;white-space:nowrap;font-weight:850}.fqi-list strong{font-size:13px}.fqi-list p{font-size:12px;color:var(--text);padding:0 12px 17px 71px;margin:0}.chevron{margin-left:auto;color:var(--primary);font-size:20px;font-weight:450}.fqi-list details[open] .chevron{transform:rotate(45deg)}.source-panel{margin:23px 0 35px;padding:0 2px}.source-panel p{font-size:12px;color:var(--muted);max-width:850px}.source-links{display:flex;flex-wrap:wrap;gap:9px;margin:14px 0}.source-links a{font-size:11px;text-decoration:none;border:1px solid var(--stroke);background:white;border-radius:7px;padding:7px 11px;font-weight:750}.source-links a:hover{border-color:var(--primary)}.source-detail{word-wrap:break-word}.footer{background:#172c41;color:#afc2d0;padding:23px 0;font-size:10px}.footer-line{display:flex;gap:10px;justify-content:space-between;flex-wrap:wrap}.footer-line span:first-child{font-weight:900;letter-spacing:1px}.error-empty{padding:64px 15px;text-align:center;color:var(--muted);font-weight:650}.error-empty strong{display:block;color:var(--ink);font-size:20px;margin-bottom:8px}
+@media(max-width:900px){.control-grid{grid-template-columns:repeat(2,1fr)}.kpis{grid-template-columns:repeat(2,1fr)}.hero-monogram{width:100px;min-width:100px}.insight-grid{grid-template-columns:1fr}.mast-row nav{gap:10px}}@media(max-width:600px){.container{padding:0 15px}.mast-row{padding:13px 16px;flex-wrap:wrap}.mast-row nav{width:100%;justify-content:space-between}.wordmark-label{font-size:8px}.hero{padding:30px 23px;min-height:255px}.hero-monogram{display:none}.control-grid{grid-template-columns:1fr}.filters,.chart-panel,.table-panel,.method-panel{padding:19px 16px}.kpis{gap:8px}.kpi{padding:16px}.options{gap:12px}.button{margin-left:0}.tip{display:none}.legend{gap:8px;font-size:9px}.section-head h2{font-size:22px}.chart-content{height:290px}.fqi-list p{padding-left:4px}}
+
+</style>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Ir ao conteúdo</a>
+  <header class="masthead">
+    <div class="mast-row">
+      <div class="wordmark"><span class='mark'>LABX<span class='mark-dot'>.</span></span><span class="sep"></span><span class="wordmark-label">VIDRARIA / INDICADORES</span></div>
+      <nav aria-label="Navegação do painel"><a href="#analise">Análise</a><a href="#serie">Série histórica</a><a href="#metodologia">FQI e métodos</a><a href="#fontes">Fontes</a></nav>
+    </div>
+  </header>
+  <main id="conteudo" class="container">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content"><div class="overline">LABX / OBSERVATÓRIO DE RECURSOS PÚBLICOS <span class="separator">/</span> INDI 01</div>
+        <h1 id="hero-title">Recursos da <em>Saúde Digital</em></h1>
+        <p class="hero-sub">Orçamento, execução e participação institucional da SEIDIGI no Ministério da Saúde.</p>
+        <div class="hero-meta"><span id="meta-update" class="flag flag-neutral">Última publicação: —</span><span id="meta-coverage" class="flag">Série histórica: —</span><span id="meta-exec" class="flag">Execução: —</span><span id="meta-ipca" class="flag">IPCA: —</span></div>
+      </div>
+      <div class="hero-monogram" aria-hidden="true"><span>Σ</span><i></i><b>R$</b></div>
+    </section>
+    <aside id="data-warning" class="warning" hidden></aside>
+    <section id="analise" class="panel filters" aria-label="Filtros de análise">
+      <div class="section-head compact"><div><div class="overline">01 / EXPLORAR</div><h2>Recorte analítico</h2></div><span class="tip">Os controles funcionam sem conexão com a internet.</span></div>
+      <div class="control-grid">
+        <label>Instituição / escopo<select id="scope"><option value="seidigi">SEIDIGI</option><option value="ti_ms">Tecnologia da informação no MS</option><option value="ms">Ministério da Saúde</option></select></label>
+        <label>Indicador<select id="metric"><option value="atualizado">Orçamento atualizado</option><option value="inicial">Orçamento inicial</option><option value="empenhado">Empenhado</option><option value="liquidado">Liquidado</option><option value="pago">Pago (exercício)</option><option value="rp_pago">Restos a pagar pagos</option><option value="desembolso">Desembolso total</option><option value="execucao">Execução financeira / dotação (%)</option><option value="share_ms_atualizado">Participação no MS: dotação (%)</option><option value="share_ms_empenhado">Participação no MS: empenhado (%)</option><option value="share_ms_liquidado">Participação no MS: liquidado (%)</option><option value="share_ms_pago">Participação no MS: pago (%)</option><option value="share_ms_desembolso">Participação no MS: desembolso (%)</option><option value="share_ti_atualizado">TI-MS / SEIDIGI: dotação (%)</option><option value="share_ti_pago">TI-MS / SEIDIGI: pago (%)</option></select></label>
+        <label>Agrupamento<select id="group"><option value="ano">Exercícios (ano)</option><option value="mandato">Mandatos federais (4 anos)</option></select></label>
+        <label>Exercício destacado<select id="year"><option>—</option></select></label>
+      </div>
+      <div class="options"><label class="check"><input id="real" type="checkbox"><span>Valores reais (IPCA)</span></label><label class="check"><input id="percap" type="checkbox"><span>Por habitante</span></label><label class="check"><input id="comparison" type="checkbox" checked><span>Comparar com MS</span></label><button id="export" class="button" type="button">Exportar tabela CSV <span aria-hidden="true">↗</span></button></div>
+      <div id="mode-note" class="hint" aria-live="polite"></div>
+    </section>
+    <section class="kpis" aria-label="Indicadores de destaque">
+      <article class="kpi"><span class="kpi-index">01 / REFERÊNCIA</span><span class="kpi-title" id="kpi1-label">Valor selecionado</span><strong id="kpi1">—</strong><span class="kpi-sub" id="kpi1-sub">—</span></article>
+      <article class="kpi"><span class="kpi-index">02 / EXECUÇÃO</span><span class="kpi-title">Pago / orçamento atualizado</span><strong id="kpi2">—</strong><span class="kpi-sub">Apenas pagamentos do exercício</span></article>
+      <article class="kpi"><span class="kpi-index">03 / PARTICIPAÇÃO</span><span class="kpi-title" id="kpi3-label">Participação no MS</span><strong id="kpi3">—</strong><span class="kpi-sub" id="kpi3-sub">Mesma métrica e mesmo exercício</span></article>
+      <article class="kpi"><span class="kpi-index">04 / RESTOS A PAGAR</span><span class="kpi-title">Pagamentos de RP</span><strong id="kpi4">—</strong><span class="kpi-sub">Não compõem execução da LOA corrente</span></article>
+    </section>
+    <section id="serie" class="panel chart-panel" aria-labelledby="chart-title">
+      <div class="section-head"><div><div class="overline">02 / COMPARAR</div><h2 id="chart-title">Evolução dos recursos</h2><p id="chart-subtitle">Série anual, com mandatos separados por marcos serrilhados.</p></div><div class="legend"><span><i class="dot dot-main"></i><span id="legend-main">SEIDIGI</span></span><span id="legend-ms"><i class="dot dot-muted"></i>MS</span></div></div>
+      <div class="chart-scroll"><div id="chart" role="img" aria-label="Série histórica de recursos" class="chart-content"></div></div>
+      <div class="chart-foot"><span id="chart-range">—</span><span class="line-key"><svg width="24" height="12" viewBox="0 0 24 12" aria-hidden="true"><polyline points="11,0 13,2 11,4 13,6 11,8 13,10 11,12" fill="none" stroke="currentColor" stroke-width="1.3" /></svg>Início de mandato</span></div>
+    </section>
+    <section class="panel table-panel" aria-labelledby="table-title">
+      <div class="section-head"><div><div class="overline">03 / VERIFICAR</div><h2 id="table-title">Dados consolidados</h2><p>Valores não disponíveis são representados por travessão; zeros estruturais aparecem identificados.</p></div></div>
+      <div class="table-scroller"><table><thead><tr><th scope="col">Período</th><th scope="col" id="table-value-title">Indicador</th><th scope="col">Empenhado</th><th scope="col">Liquidado</th><th scope="col">Pago</th><th scope="col">Execução (%)</th><th scope="col">Origem / qualidade</th></tr></thead><tbody id="table-body"></tbody></table></div>
+    </section>
+    <section class="insight-grid" aria-label="Notas analíticas">
+      <article class="note"><div class="overline">LINHA DO TEMPO</div><h3>SEIDIGI não existia antes de 2023</h3><p>Nos exercícios até 2022, a série institucional é marcada como <b>zero estrutural</b>, e não como ausência de gastos federais em tecnologia ou saúde digital.</p></article>
+      <article class="note"><div class="overline">INTERPRETAÇÃO</div><h3>Dotação ≠ desembolso</h3><p>Orçamento inicial e atualizado são autorizações. Empenho, liquidação e pagamento pertencem ao ciclo de execução. Restos a pagar são mostrados separadamente.</p></article>
+      <article class="note"><div class="overline">COBERTURA</div><h3>Fontes de transparência rastreáveis</h3><p>Somente rubricas homologadas entram nos escopos de TI e SEIDIGI. Meses faltantes, divergências e classificações pendentes não são preenchidos com zero.</p></article>
+    </section>
+    <section id="metodologia" class="panel method-panel" aria-labelledby="fqi-title"><div class="section-head"><div><div class="overline">04 / TRANSPARÊNCIA METODOLÓGICA</div><h2 id="fqi-title">Fichas de qualificação dos indicadores</h2><p>Definições, fórmulas e principais cautelas de interpretação.</p></div></div>
+      <div class="fqi-list">
+        <details><summary><span class="fqi-num">FQI 01</span><strong>Autorização orçamentária</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> orçamento inicial, atualizado e créditos líquidos. <b>Fórmula:</b> créditos = atualizado − inicial. <b>Fonte:</b> CGU/OrcamentoDespesa; conferência SIOP. <b>Limitação:</b> dotação anual não equivale a gasto ou desembolso.</p></details>
+        <details><summary><span class="fqi-num">FQI 02</span><strong>Execução orçamentária</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> empenhado, liquidado e pago do exercício. <b>Fórmula:</b> execução (%) = pago / dotação atualizada × 100. <b>Fonte:</b> execução mensal CGU; empenho e pago anuais apenas como reserva identificada. <b>Limitação:</b> lacunas mensais não viram despesa zero.</p></details>
+        <details><summary><span class="fqi-num">FQI 03</span><strong>Execução financeira e restos a pagar</strong><span class="chevron">+</span></summary><p><b>Medidas:</b> pago do exercício, restos a pagar pagos e desembolso total. <b>Fórmula:</b> desembolso total = pago do exercício + RP pagos. <b>Fonte:</b> CGU/DespesasExecucao. <b>Limitação:</b> RP não integra pagamento da dotação corrente.</p></details>
+        <details><summary><span class="fqi-num">FQI 04</span><strong>Participação relativa ao Ministério e ao SUS</strong><span class="chevron">+</span></summary><p><b>Fórmula:</b> indicador da SEIDIGI / indicador do MS × 100, no mesmo estágio e exercício. <b>SIOPS:</b> estados e municípios apenas em exercícios encerrados; razão nacional SUS indisponível até consolidação sem dupla contagem de transferências. <b>Cautela:</b> não misturar gasto próprio e transferido indiscriminadamente.</p></details>
+        <details><summary><span class="fqi-num">FQI 05</span><strong>Tecnologia da informação versus SEIDIGI</strong><span class="chevron">+</span></summary><p><b>Definição:</b> rubricas TI do MS e rubricas atribuídas à SEIDIGI somente com ação/plano orçamentário homologados em <code>config/escopos.csv</code>. <b>Indicadores:</b> valores R$, % do MS, razão TI-MS/SEIDIGI. <b>Até 2022:</b> zero estrutural SEIDIGI; TI do MS pode existir.</p></details>
+        <details><summary><span class="fqi-num">FQI 06</span><strong>IPCA, habitantes e períodos de quatro anos</strong><span class="chevron">+</span></summary><p><b>IPCA:</b> tabela 1737, variável 2266 (IBGE/SIDRA), número-índice; deflator anual pela média dos meses observados do ano até a última referência disponível. <b>Habitantes:</b> RIPSA/DATASUS 2000–2025, sem imputação para 2026. <b>Mandato:</b> soma dos fluxos anuais (não das razões), com indicação de intervalos parciais.</p></details>
+      </div>
+    </section>
+    <section id="fontes" class="source-panel" aria-labelledby="source-title"><div class="section-head"><div><div class="overline">05 / PROVENIÊNCIA</div><h2 id="source-title">Fontes e atualização</h2></div></div><p>Esta página incorpora os valores agregados no momento da publicação; não faz requisições externas ao abrir. Consultas históricas devem considerar a data de referência de cada fonte e sua política de revisão.</p><div id="source-links" class="source-links"></div><p id="source-detail" class="source-detail"></p></section>
+  </main>
+  <footer class="footer"><div class="container footer-line"><span>LABX · INDI RECURSOS SEIDIGI</span><span>Dados públicos, código auditável, indicadores versionados.</span><span id="footer-update">Última publicação válida: —</span></div></footer>
+  <script id="model" type="application/json">{"title":"INDI · Recursos da SEIDIGI","updated_at":"2026-10-28T10:06:11-03:00","budget_years":{},"populacao":{"2000":{"valor":174695935,"fonte":"RIPSA-DATASUS"},"2001":{"valor":177003743,"fonte":"RIPSA-DATASUS"},"2002":{"valor":179228254,"fonte":"RIPSA-DATASUS"},"2003":{"valor":181377654,"fonte":"RIPSA-DATASUS"},"2004":{"valor":183469593,"fonte":"RIPSA-DATASUS"},"2005":{"valor":185518369,"fonte":"RIPSA-DATASUS"},"2006":{"valor":187535030,"fonte":"RIPSA-DATASUS"},"2007":{"valor":189458827,"fonte":"RIPSA-DATASUS"},"2008":{"valor":191335196,"fonte":"RIPSA-DATASUS"},"2009":{"valor":193174036,"fonte":"RIPSA-DATASUS"},"2010":{"valor":194749329,"fonte":"RIPSA-DATASUS"},"2011":{"valor":196158610,"fonte":"RIPSA-DATASUS"},"2012":{"valor":197670620,"fonte":"RIPSA-DATASUS"},"2013":{"valor":199226702,"fonte":"RIPSA-DATASUS"},"2014":{"valor":200811131,"fonte":"RIPSA-DATASUS"},"2015":{"valor":202403642,"fonte":"RIPSA-DATASUS"},"2016":{"valor":203871925,"fonte":"RIPSA-DATASUS"},"2017":{"valor":205211557,"fonte":"RIPSA-DATASUS"},"2018":{"valor":206529038,"fonte":"RIPSA-DATASUS"},"2019":{"valor":207900099,"fonte":"RIPSA-DATASUS"},"2020":{"valor":209164889,"fonte":"RIPSA-DATASUS"},"2021":{"valor":210103642,"fonte":"RIPSA-DATASUS"},"2022":{"valor":210862983,"fonte":"RIPSA-DATASUS"},"2023":{"valor":211695158,"fonte":"RIPSA-DATASUS"},"2024":{"valor":212583750,"fonte":"RIPSA-DATASUS"},"2025":{"valor":213421037,"fonte":"RIPSA-DATASUS"}},"ipca":{"referencia":"202605","indice_referencia":7640.15,"ultimo_indice":"202605","indices_anuais":{},"serie_completa_ate":"202605","fonte":"IBGE/SIDRA 1737/2266; contingencia: CSV usuario"},"sources":{"orcamento":"https://portaldatransparencia.gov.br/download-de-dados/orcamento-despesa","execucao":"https://portaldatransparencia.gov.br/download-de-dados/despesas-execucao","populacao":"https://svs.aids.gov.br/daent/acesso-a-informacao/acoes-e-programas/estimativas-populacionais/","ipca":"https://sidra.ibge.gov.br/tabela/1737","siops":"https://portalfns.saude.gov.br/siops/siops-downloads/","siop":"https://www1.siop.planejamento.gov.br/siopdoc/doku.php?id=acesso_publico:dados_abertos"},"prov":[],"scope_count":0,"ti_count":0,"empty":true,"warning":"Dados orcamentarios ausentes"}</script>
+  <script>'use strict';
+(() => {
+const model=JSON.parse(document.getElementById('model').textContent);
+const $$=id=>document.getElementById(id);
+const C={scope:$$('scope'),metric:$$('metric'),group:$$('group'),year:$$('year'),real:$$('real'),percap:$$('percap'),comparison:$$('comparison')};
+const br=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2});
+const sortedYears=Object.keys(model.budget_years).map(Number).sort((a,b)=>a-b);
+const labelScope={ms:'Ministério da Saúde',seidigi:'SEIDIGI',ti_ms:'TI no Ministério da Saúde'};
+const labelMetric={inicial:'Orçamento inicial',atualizado:'Orçamento atualizado',empenhado:'Empenhado',liquidado:'Liquidado',pago:'Pago (exercício)',rp_pago:'RP pagos',desembolso:'Desembolso total',execucao:'Pago / dotação (%)',share_ms:'Participação no MS: pago (%)',share_ti:'TI-MS / SEIDIGI: pago (%)',share_ms_atualizado:'Participação no MS: dotação (%)',share_ms_empenhado:'Participação no MS: empenhado (%)',share_ms_liquidado:'Participação no MS: liquidado (%)',share_ms_pago:'Participação no MS: pago (%)',share_ms_desembolso:'Participação no MS: desembolso (%)',share_ti_atualizado:'TI-MS / SEIDIGI: dotação (%)',share_ti_pago:'TI-MS / SEIDIGI: pago (%)'};
+function finite(x){return typeof x==='number' && Number.isFinite(x)}
+function fmt(v,unit='money',short=false){if(!finite(v))return '—';if(unit==='percent')return br.format(v)+'%';if(unit==='percap')return 'R$ '+br.format(v);if(short){const x=Math.abs(v);if(x>=1e12)return 'R$ '+br.format(v/1e12)+' tri';if(x>=1e9)return 'R$ '+br.format(v/1e9)+' bi';if(x>=1e6)return 'R$ '+br.format(v/1e6)+' mi';}return 'R$ '+new Intl.NumberFormat('pt-BR',{minimumFractionDigits:0,maximumFractionDigits:2}).format(v)}
+function value(y,scope,metric){const r=model.budget_years[String(y)]?.[scope];if(!r)return null;
+  if(metric==='desembolso')return finite(r.pago)&&finite(r.rp_pago)?r.pago+r.rp_pago:null;
+  if(metric==='execucao')return finite(r.pago)&&finite(r.atualizado)&&r.atualizado>0?100*r.pago/r.atualizado:null;
+  if(metric.startsWith('share_ms')){const stage=metric.startsWith('share_ms_')?metric.slice(9):'pago';const numerator=value(y,scope,stage),denominator=value(y,'ms',stage);return finite(numerator)&&finite(denominator)&&denominator>0?100*numerator/denominator:null;}
+  if(metric.startsWith('share_ti')){const stage=metric.startsWith('share_ti_')?metric.slice(9):'pago';const ti=value(y,'ti_ms',stage),se=value(y,'seidigi',stage);return finite(ti)&&finite(se)&&se>0?100*ti/se:null;}
+  return finite(r[metric])?r[metric]:null;
+}
+function isPercentage(metric){return metric==='execucao'||metric.startsWith('share_ms')||metric.startsWith('share_ti')}
+function converted(raw,year,metric){if(!finite(raw))return null;if(isPercentage(metric))return raw;let v=raw;
+if(C.real.checked){const avg=model.ipca.indices_anuais[String(year)];if(!finite(avg)||avg<=0)return null;v*=model.ipca.indice_referencia/avg;}
+if(C.percap.checked){const population=model.populacao[String(year)]?.valor;if(!finite(population)||population<=0)return null;v/=population;}
+return v;}
+function annual(year,scope,metric){return converted(value(year,scope,metric),year,metric)}
+function termStart(y){return y>=2003?2003+4*Math.floor((y-2003)/4):1999+4*Math.floor((y-1999)/4)}
+function periodLabel(y){const first=termStart(y);return first+'–'+(first+3)}
+function aggregate(years,scope,metric){if(!years.length)return null;
+ const data=years.map(y=>annual(y,scope,metric));if(data.some(x=>x===null))return null;
+ // Porcentagens e participacoes precisam ser calculadas como razao das somas originais.
+ if(isPercentage(metric)){
+  let numerator=0,denominator=0;
+  for(const y of years){let n,d;if(metric==='execucao'){n=value(y,scope,'pago');d=value(y,scope,'atualizado');}
+   else if(metric.startsWith('share_ms')){const stage=metric.startsWith('share_ms_')?metric.slice(9):'pago';n=value(y,scope,stage);d=value(y,'ms',stage);}
+   else{const stage=metric.startsWith('share_ti_')?metric.slice(9):'pago';n=value(y,'ti_ms',stage);d=value(y,'seidigi',stage);}
+   if(!finite(n)||!finite(d))return null;numerator+=n;denominator+=d;}
+  return denominator>0?100*numerator/denominator:null;
+ }
+ // Valores deflacionados = soma das parcelas anuais ja convertidas.
+ return data.reduce((a,b)=>a+b,0);
+}
+function points(scope,metric){if(C.group.value==='ano')return sortedYears.map(y=>({x:String(y),start:y,years:[y],value:annual(y,scope,metric),quality:quality(y,scope),partial:y===new Date().getFullYear()}));
+ const periods=[...new Set(sortedYears.map(periodLabel))];return periods.map(p=>{let y0=Number(p.slice(0,4)),ys=sortedYears.filter(y=>termStart(y)===y0);return {x:p,start:y0,years:ys,value:aggregate(ys,scope,metric),quality:ys.map(y=>quality(y,scope)).filter(Boolean).join('; '),partial:ys.length<4||ys.includes(new Date().getFullYear())};});
+}
+function quality(y,scope){const s=model.budget_years[String(y)]?.[scope]?._status;
+ return ({zero_estrutural:'Zero estrutural',execucao_mensal:'CGU mensal',reserva_orcamento_anual:'CGU anual (reserva)',sem_homologacao:'Rubrica não homologada',orcamento_sem_execucao:'Sem execução mensal',indisponivel:'Indisponível'})[s]||'Fonte parcial';}
+function svgEscape(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function metricUnit(){return isPercentage(C.metric.value)?'percent':C.percap.checked?'percap':'money'}
+function draw(){let p=points(C.scope.value,C.metric.value),p2=C.comparison.checked&&C.scope.value!=='ms'&&!isPercentage(C.metric.value)?points('ms',C.metric.value):[];
+ if(!p.length||[...p,...p2].every(x=>x.value===null)){
+  $$('chart').innerHTML='<div class="error-empty"><strong>Sem valores homologados disponíveis</strong>Verifique a importação dos dados oficiais e o cadastro de escopos.</div>';return;
+ }
+ const width=1100,height=310,left=79,right=30,top=25,bottom=55,inner=width-left-right,chartHeight=height-top-bottom;
+ const x=i=>left+(p.length===1?inner/2:inner*i/(p.length-1));
+ const vals=[...p,...p2].map(o=>o.value).filter(finite);
+ const min=Math.min(0,...vals),max=Math.max(...vals);const hi=max===min?max+1:max*1.085;
+ const y=v=>top+(hi-v)/(hi-min)*chartHeight;
+ const unit=metricUnit();
+ const shortLabel=n=>!finite(n)?'—':unit==='percent'?br.format(n)+'%':unit==='percap'?'R$ '+br.format(n):n>=1e12?br.format(n/1e12)+' tri':n>=1e9?br.format(n/1e9)+' bi':n>=1e6?br.format(n/1e6)+' mi':br.format(n);
+ let svg=`<svg viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-labelledby="plot-title"><title id="plot-title">Série histórica ${svgEscape(labelMetric[C.metric.value])} — ${svgEscape(labelScope[C.scope.value])}</title>`;
+ for(let k=0;k<=4;k++){let v=min+(hi-min)*k/4,yy=y(v);svg+=`<line x1="${left}" x2="${width-right}" y1="${yy}" y2="${yy}" stroke="#dce6ed" stroke-dasharray="3 5"/><text x="${left-13}" y="${yy+3}" text-anchor="end">${svgEscape(shortLabel(v))}</text>`;}
+ if(C.group.value==='ano'&&p.length>1){for(let i=1;i<p.length;i++){const st=p[i].start;if(st>=2007&&((st-2003)%4)===0){const xx=(x(i)+x(i-1))/2;let coords=[];for(let z=top;z<=height-bottom;z+=8)coords.push(`${xx+(Math.floor((z-top)/8)%2?3:-3)},${z}`);svg+=`<polyline points="${coords.join(' ')}" fill="none" stroke="#ad7d55" stroke-width="1.5" opacity=".7"/><text x="${xx+6}" y="${top+13}" fill="#a06e43" font-size="10">${st}</text>`;}}}
+ if(C.group.value==='mandato'){for(let i=1;i<p.length;i++){let xx=(x(i)+x(i-1))/2;svg+=`<line x1="${xx}" x2="${xx}" y1="${top}" y2="${height-bottom}" stroke="#d1a780" stroke-dasharray="2 5"/>`;}}
+ const lines=[{pts:p,color:'#337ab7',stroke:3.3},{pts:p2,color:'#c58b57',stroke:2.3}];
+ for(const l of lines){if(!l.pts.length)continue;let segment=[];function flush(){if(segment.length>1){svg+=`<polyline points="${segment.join(' ')}" stroke="${l.color}" stroke-width="${l.stroke}" fill="none" stroke-linejoin="round" stroke-linecap="round"/>`;}segment=[];}
+  l.pts.forEach((o,i)=>{if(!finite(o.value)){flush();return;}const xx=x(i),yy=y(o.value);segment.push(`${xx},${yy}`)});flush();
+  l.pts.forEach((o,i)=>{if(!finite(o.value))return;svg+=`<circle cx="${x(i)}" cy="${y(o.value)}" r="3.5" fill="#fff" stroke="${l.color}" stroke-width="2"><title>${svgEscape(o.x)} · ${svgEscape(fmt(o.value,unit,true))}${o.partial?' · período parcial':''}</title></circle>`;});
+ }
+ const interval=p.length>17?2:1;
+ p.forEach((o,i)=>{if(i%interval===0||i===p.length-1)svg+=`<text x="${x(i)}" y="${height-25}" text-anchor="middle" class="axis-label">${svgEscape(o.x)}</text>`;});
+ svg+='</svg>';$$('chart').innerHTML=svg;
+}
+function formatKpi(id,v,unit){$$(id).textContent=fmt(v,unit,true);$$(id).title=fmt(v,unit)}
+function yearsForKpi(year){return C.group.value==='mandato'?sortedYears.filter(y=>termStart(y)===termStart(year)):[year]}
+function kpi(){const y=Number(C.year.value),scope=C.scope.value,m=C.metric.value,ys=yearsForKpi(y);const single=ys.length===1;
+ const collect=(s,met)=>single?annual(ys[0],s,met):aggregate(ys,s,met);
+ $$('kpi1-label').textContent=labelMetric[m];formatKpi('kpi1',collect(scope,m),metricUnit());$$('kpi1-sub').textContent=C.group.value==='mandato'?periodLabel(y):String(y);
+ formatKpi('kpi2',collect(scope,'execucao'),'percent');
+ $$('kpi3-label').textContent=scope==='ms'?'Participação do MS no próprio MS':'Participação no MS (pagamentos)';
+ formatKpi('kpi3',collect(scope,'share_ms'),'percent');
+ $$('kpi3-sub').textContent='Pago do escopo / pago do MS';
+ formatKpi('kpi4',collect(scope,'rp_pago'),C.percap.checked?'percap':'money');
+}
+function table(){const p=points(C.scope.value,C.metric.value),tr=[];for(const row of p){const ys=row.years;const func=metric=>ys.length===1?annual(ys[0],C.scope.value,metric):aggregate(ys,C.scope.value,metric);const v=func(C.metric.value),unit=metricUnit();let qual=row.quality;
+ if(row.partial)qual+=' · período parcial';
+ const isZero=ys.every(y=>quality(y,C.scope.value)==='Zero estrutural');
+ tr.push(`<tr><td>${svgEscape(row.x)}${row.partial?' *':''}</td><td class="${isZero?'zero':!finite(v)?'missing':''}">${svgEscape(fmt(v,unit))}${isZero?' (estrutural)':''}</td><td>${svgEscape(fmt(func('empenhado'),C.percap.checked?'percap':'money'))}</td><td>${svgEscape(fmt(func('liquidado'),C.percap.checked?'percap':'money'))}</td><td>${svgEscape(fmt(func('pago'),C.percap.checked?'percap':'money'))}</td><td>${svgEscape(fmt(func('execucao'),'percent'))}</td><td class="quality">${svgEscape(qual)}</td></tr>`);
+ }
+ $$('table-body').innerHTML=tr.join('')||'<tr><td colspan="7">Dados orçamentários ainda não importados.</td></tr>';
+ $$('table-value-title').textContent=labelMetric[C.metric.value]+(C.percap.checked?' (R$/hab.)':'');
+ $$('chart-range').textContent=p.length?`${p[0].x} a ${p[p.length-1].x} · séries anuais em R$${C.real.checked?' corrigidos pelo IPCA':''}${C.percap.checked?'/habitante':''}`:'Sem série';
+}
+function showNotes(){const pct=isPercentage(C.metric.value);
+ C.real.disabled=pct;C.percap.disabled=pct;if(pct){C.real.checked=false;C.percap.checked=false;}
+ C.comparison.disabled=pct||C.scope.value==='ms';if(C.comparison.disabled)C.comparison.checked=false;
+ let notes=[];
+ if(C.real.checked)notes.push(`Valores a preços de ${model.ipca.referencia.slice(4,6)}/${model.ipca.referencia.slice(0,4)}; deflator pela média anual dos índices mensais conhecidos.`);
+ if(C.percap.checked)notes.push('Sem estimativa RIPSA de 2026: valores desse exercício em R$/hab. permanecem indisponíveis.');
+ if(pct)notes.push('Razão entre valores brutos do mesmo estágio. IPCA e população não se aplicam a percentuais.');
+ if(C.group.value==='mandato')notes.push('Mandatos incompletos sinalizados; porcentagens recalculadas sobre as somas.');
+ if(C.scope.value!=='ms'&&((C.scope.value==='seidigi'&&model.scope_count===0)||(C.scope.value==='ti_ms'&&model.ti_count===0)))notes.push('Nenhuma rubrica homologada para este escopo; desde 2023, ausência de dado não significa zero.');
+ $$('mode-note').textContent=notes.join(' ');
+ $$('legend-main').textContent=labelScope[C.scope.value];$$('legend-ms').style.display=C.comparison.checked?'flex':'none';
+ $$('chart-subtitle').textContent=C.group.value==='ano'?'Série anual com limites serrilhados no início dos mandatos federais.':'Somas de quatro exercícios por mandato federal; períodos incompletos são identificados.';
+}
+function update(){showNotes();kpi();draw();table()}
+function initialize(){const timestamp=(model.updated_at||'').replace('T',' · ');
+ $$('meta-update').textContent='Última publicação válida: '+(timestamp||'—');$$('footer-update').textContent='Última publicação válida: '+(timestamp||'—');
+ $$('meta-coverage').textContent='Dados fiscais: '+(sortedYears.length?`${sortedYears[0]}–${sortedYears[sortedYears.length-1]}`:'não publicados');
+ $$('meta-ipca').textContent='IPCA: '+(model.ipca.referencia||'—');
+ const yearLatest=sortedYears.length?sortedYears[sortedYears.length-1]:null;const monthCut=yearLatest?model.budget_years[String(yearLatest)]?._mes_referencia:null;
+ $$('meta-exec').textContent=monthCut?`Execução mensal até ${String(monthCut).padStart(2,'0')}/${yearLatest}`:'Execução mensal: cobertura não confirmada';
+ C.year.innerHTML=sortedYears.length?sortedYears.map(y=>`<option value="${y}">${y}</option>`).join(''):'<option value="0">Sem dados</option>';if(sortedYears.length)C.year.value=String(sortedYears[sortedYears.length-1]);
+ let warnings=[];
+ if(model.empty)warnings.push('Nenhum dado fiscal foi publicado. Execute a coleta oficial antes de disponibilizar o painel ao público.');
+ if(model.scope_count===0)warnings.push('SEIDIGI: classificação de rubricas não homologada; indicadores de 2023 em diante ficam indisponíveis.');
+ if(model.ti_count===0)warnings.push('TI/MS: classificação de rubricas ainda não homologada.');
+ if(model.ipca.referencia){const ref=Number(model.ipca.referencia.slice(0,4))*12+Number(model.ipca.referencia.slice(4,6));const atual=new Date().getFullYear()*12+(new Date().getMonth()+1);if(atual-ref>2)warnings.push('IPCA com defasagem superior a 2 meses: deflação limitada à competência mostrada.');}
+ if(warnings.length){$$('data-warning').hidden=false;$$('data-warning').textContent=warnings.join(' ');}
+ let links=Object.entries(model.sources).map(([id,url])=>`<a href="${svgEscape(url)}" target="_blank" rel="noopener noreferrer">${svgEscape(({orcamento:'Orçamento CGU',execucao:'Execução CGU',populacao:'RIPSA/DATASUS',ipca:'IPCA/SIDRA',siops:'SIOPS',siop:'SIOP'})[id]||id)} ↗</a>`).join('');$$('source-links').innerHTML=links;
+ $$('source-detail').textContent=`Arquivos de origem verificados: ${(model.prov||[]).length}. Hash SHA-256 auditável no projeto. Dados RIPSA: 2000–2025. IPCA: ${model.ipca.referencia}. Nenhuma transmissão de informações ao abrir o HTML.`;
+ Object.values(C).forEach(el=>el.addEventListener('change',update));
+ $$('export').addEventListener('click',()=>{const rows=[['periodo','escopo','indicador','valor','unidade','qualidade']];for(const p of points(C.scope.value,C.metric.value)){rows.push([p.x,C.scope.value,C.metric.value,finite(p.value)?String(p.value):'',metricUnit(),p.quality+(p.partial?';parcial':'')]);}const csv=rows.map(r=>r.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(';')).join('\n');const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'});const url=URL.createObjectURL(blob);let a=document.createElement('a');a.href=url;a.download='indi_recursos_seidigi.csv';document.body.appendChild(a);a.click();a.remove();URL.revokeObjectURL(url);});
+ update();}
+initialize();
+})();
+</script>
+</body>
+</html>

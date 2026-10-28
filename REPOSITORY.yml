@@ -1,0 +1,15 @@
+id: indi_recursos_seidigi
+version: 0.1.0
+organization: LabXiabr
+class: indicadores
+product: INDI - Recursos da SEIDIGI
+identity_provider: LabXiabr/vidraria
+publication: public/index.html
+engine: scripts/atualizar.py
+update: cron, weekly
+source_systems:
+  - CGU Portal da Transparencia
+  - SIOP (conferencia)
+  - RIPSA/DATASUS
+  - IBGE/SIDRA
+  - SIOPS (integracao futura)

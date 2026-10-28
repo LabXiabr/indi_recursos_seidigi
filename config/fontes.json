@@ -1,0 +1,9 @@
+{
+  "cgu_base": "https://dadosabertos-download.cgu.gov.br/PortalDaTransparencia/saida",
+  "orcamento_template": "{base}/orcamento-despesa/{year}_OrcamentoDespesa.zip",
+  "execucao_template": "{base}/despesas-execucao/{year}{month:02d}_DespesasExecucao.zip",
+  "ibge_ipca_sidra": "https://apisidra.ibge.gov.br/values/t/1737/n1/all/v/2266/p/all",
+  "ministerio_saude_codigos": ["36000"],
+  "ministerio_saude_nome": "MINISTERIO DA SAUDE",
+  "inicio_serie": 2008
+}
